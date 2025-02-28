@@ -19,18 +19,23 @@ public class BankAccount {
         }
     }
 
-    public void transfer(double valueTransfer, int accountNumber, String holderName) {
+    public void transfer(double valueTransfer, BankAccount accountNumber, String holderName) {
         if (valueTransfer > this.sale) {
             System.out.println("Saldo insuficiente para transferência!");
         } else {
             this.sale -= valueTransfer;
 
-            System.out.println("Tranferência de "+valueTransfer+" feita para a conta "+accountNumber+" de "+holderName+"\nSeu saldo atual: "+this.sale);
+            System.out.println("Tranferência de "+valueTransfer+" feita para a conta "+accountNumber.getNumberAccount()+" de "+holderName+"\nSeu saldo atual: "+this.sale);
 
         }
     }
 
     public void viewSale() {
+
         System.out.println("Seu saldo: "+this.sale);
+    }
+
+    public int getNumberAccount() {
+        return numberAccount;
     }
 }

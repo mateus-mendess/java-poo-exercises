@@ -8,7 +8,6 @@ public class Main {
         fiatToro.model = "Fiat Toro";
         fiatToro.year = 2025;
         fiatToro.color = "Prata";
-
         fiatToro.alterSpeed(35);
         fiatToro.informationCar();
         fiatToro.accelerateCar();
@@ -44,8 +43,6 @@ public class Main {
         harry.deposits(355.50);
         harry.viewSale();
         harry.withdraw(1000.01);
-        harry.transfer(65.50, hermione.numberAccount, hermione.nameHolder);
-
-
+        harry.transfer(65.50, hermione, hermione.nameHolder);
     }
 }

@@ -19,4 +19,10 @@ public class Car {
     public void informationCar() {
         System.out.println("Modelo: "+this.model+"\ncor: "+this.color+"\nyear: "+this.year+"\nspeed: "+this.speed);
     }
+
+    public void arrayCar(String[] cars) {
+        for (String car : cars) {
+            System.out.println(car);
+        }
+    }
 }
